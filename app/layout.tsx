@@ -8,13 +8,21 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://reddy-online.com"),
+  applicationName: "Reddy Anna",
   title: `${SITE_CONFIG.brand.name} – Official ID | Get ${SITE_CONFIG.brand.name} Book ID Online`,
   description: SITE_CONFIG.description,
   keywords: ["Reddy Anna", "Reddy Book", "Anna Book", "Cricket Betting ID", "IPL Betting ID", "Online Betting India"],
+  authors: [{ name: "Reddy Anna" }],
+  creator: "Reddy Anna",
+  publisher: "Reddy Anna",
+  alternates: {
+    canonical: "https://reddy-online.com",
+  },
   openGraph: {
     title: `${SITE_CONFIG.brand.name} – Official ID`,
     description: SITE_CONFIG.description,
-    url: SITE_CONFIG.url,
+    url: "https://reddy-online.com",
     siteName: SITE_CONFIG.brand.name,
     images: [
       {
@@ -26,6 +34,16 @@ export const metadata: Metadata = {
     ],
     locale: "en_IN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_CONFIG.brand.name} – Official ID`,
+    description: SITE_CONFIG.description,
+    images: ["/hero_bg.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 
