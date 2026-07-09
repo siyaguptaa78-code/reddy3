@@ -6,5 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     { url: baseUrl, lastModified, changeFrequency: 'daily', priority: 1 },
+    { url: `${baseUrl}/abu-dhabi-t10-2026/`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
   ];
 }

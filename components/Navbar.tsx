@@ -28,10 +28,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <nav className={styles.desktopNav}>
-          <Link href="#home">Home</Link>
-          <Link href="#about">About Us</Link>
-          <Link href="#services">Services</Link>
-          <Link href="#contact">Contact</Link>
+          <Link href="/#home">Home</Link>
+          <Link href="/#about">About Us</Link>
+          <Link href="/#services">Services</Link>
+          <Link href="/#blogs">Blogs</Link>
+          <Link href="/#contact">Contact</Link>
         </nav>
 
         <div className={styles.navActions}>
@@ -53,9 +54,11 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className={styles.mobileMenu}>
-          <Link href="#home" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link href="#about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
-          <Link href="#services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+          <Link href="/#home" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link href="/#about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
+          <Link href="/#services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+          <Link href="/#blogs" onClick={() => setMobileMenuOpen(false)}>Blogs</Link>
+          <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           <div className={styles.mobileActions}>
              <WhatsAppButton variant="outline">Sign Up</WhatsAppButton>
              <WhatsAppButton>Login</WhatsAppButton>

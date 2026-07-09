@@ -10,6 +10,7 @@ import Bonuses from "@/components/Bonuses";
 import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import Testimonials from "@/components/Testimonials";
+import BlogsSection from "@/components/BlogsSection";
 import ResponsibleGaming from "@/components/ResponsibleGaming";
 import Footer from "@/components/Footer";
 
@@ -50,6 +51,7 @@ export default function Home() {
       
       <FAQSection />
       <Testimonials />
+      <BlogsSection />
       <ResponsibleGaming />
       <Footer />
     </main>
